@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Uhádněte mé číslo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Uhádněte mé číslo!</h1>
+      <!--p class="between">(Between 1 and 20)</p-->
+      <button class="btn again">Znovu!</button>
+      <button class="btn help">Nápověda!</button>
+      <div class="number">?</div>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h2 class="window">Jak se to hraje?</h2>
+        <p>
+          Ahoj) Chcete-li vyhrát tuto hru, musíte uhodnout skryté číslo mezi 1 a
+          20 s nejmenším počtem pokusů. V dolní části se zobrazí počítadlo, kde
+          můžete sledovat své nejlepší skóre. Hodně štěstí!
+        </p>
+      </div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Kontrola!</button>
+      </section>
+      <section class="right">
+        <p class="message">Začít hádat...</p>
+        <p class="label-score">💯 Pokus: <span class="score">1</span></p>
+        <p class="label-highscore">
+          🥇 Nejlepší pokus: <span class="highscore">20</span>
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
